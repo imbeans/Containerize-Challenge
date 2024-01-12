@@ -1,11 +1,13 @@
 # Notes on progress
 
-1/11/23 5pm
+## 1/11/23
+
+### 5pm
     Setup Gitea for local git version control on Truenas Scale
  - Deployed Gitea app via Truenas scale
     - http://10.1.1.50:10037/
 
-1/11/23 5:45pm  
+### 5:45pm  
    - Built Ubuntu 22.04 VM for build environment
      -  ip: 10.1.1.144
    - Installed and updated the following apt packages
@@ -30,8 +32,28 @@
             # Check success
             python3.12 --version
             ```
-1/11/223 7pm
+### 7pm
  - Setup Gitea Runner
     - Installed ACT_Runner docker image
     - See GiteaRunner folder in Containerize Challege
     - Docker Compose file creates container and registers with Gitea instance on local network
+
+### 7:40pm
+- Took a break
+- Created notes.md to track milestones in progress
+
+### 9pm
+- Found https://github.com/nginx-proxy/nginx-proxy/tree/main
+- use this to automate reverse proxy creation and update of containers
+- Should only be used for containers running on a signle host
+- Use this archetecture if this is scalled to cloud http://jasonwilder.com/blog/2014/07/15/docker-service-discovery/
+
+
+## 1/12
+
+### 1pm
+- created Dockerfile for nginx
+- created nginx.conf 
+    - config matches requirements found in readme.md udner section part one 
+
+
