@@ -1,11 +1,14 @@
-#Notes on progress
+# Notes on progress
+
 1/11/23 5pm
     Setup Gitea for local git version control
+
 1/11/23 5:45pm  
-    Built Ubuntu 22.04 VM for build environment
-    ip: 10.1.1.144
-    Installed and updated the following apt packages
-        docker
+   - Built Ubuntu 22.04 VM for build environment
+   - ip: 10.1.1.144
+   - Installed and updated the following apt packages
+       - docker
+
            ```Text
             sudo apt update
             sudo apt install apt-transport-https ca-certificates curl software-properties-common
@@ -15,7 +18,8 @@
             apt-cache policy docker-ce
             sudo apt install docker-ce
                        ```
-        docker compose - inlcuded in Docker            
+
+        -docker compose - inlcuded in Docker            
         python
         ```Text
             sudo add-apt-repository ppa:deadsnakes/ppa
