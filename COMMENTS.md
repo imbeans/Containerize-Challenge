@@ -56,4 +56,9 @@
 - created nginx.conf 
     - config matches requirements found in readme.md udner section part one 
 
+### 5pm
+- Finalized server.py
+- setup dockerfile for app
+- finalized docker-compose.yml for build
+
 

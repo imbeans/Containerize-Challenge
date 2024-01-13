@@ -3,13 +3,13 @@ services:
   app:
     container_name: containerize_app_1
     build:
-      context: .
+      context: ./app
       args:
         options: --reload
     ports:
       - "8000:8000"
 
-      
+
   nginx:
     container_name: containerize_nginx_1
     
