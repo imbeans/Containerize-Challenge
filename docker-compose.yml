@@ -2,10 +2,17 @@ version: "3"
 services:
   app:
     container_name: containerize_app_1
-    # your code goes here ...
+    build:
+      context: .
+      args:
+        options: --reload
+    ports:
+      - "8000:8000"
+
+      
   nginx:
     container_name: containerize_nginx_1
-    # your code goes here ...
+    
     ports:
       - "80:80"
       - "443:443"
