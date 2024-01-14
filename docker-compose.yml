@@ -4,10 +4,11 @@ services:
     container_name: containerize_app_1
     build:
       context: ./app
-      args:
-        options: --reload
     ports:
       - "8000:8000"
+    volumes:
+      - ./app:/app  # Mount the host 'app' directory to the 'app' directory inside the container
+      
 
 
   nginx:
