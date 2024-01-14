@@ -1,7 +1,7 @@
 from flask import Flask, request, make_response, redirect
 from werkzeug.middleware.proxy_fix import ProxyFix
-app = Flask(__name__)
 
+app = Flask(__name__)
 
 @app.route('/')
 def index():
@@ -21,3 +21,6 @@ def index():
     response.headers["Content-Type"] = "text/plain"
 
     return response
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8000)
