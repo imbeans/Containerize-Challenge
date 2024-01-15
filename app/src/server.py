@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    content = "It's harder to ask forgiveness than it is to get permission."
+    content = "It's easier to ask forgiveness than it is to get permission."
     fwd_for = "X-Forwarded-For: {}".format(
         request.headers.get('x-forwarded-for', None)
     )
