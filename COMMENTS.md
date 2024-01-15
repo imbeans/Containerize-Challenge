@@ -53,6 +53,7 @@
 
 ### 1pm
 - created Dockerfile for nginx
+- swithced back to standard image of nginx to support a default config file configuration proceedure
 - created nginx.conf 
     - config matches requirements found in readme.md udner section part one 
 
