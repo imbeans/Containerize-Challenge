@@ -61,4 +61,11 @@
 - setup dockerfile for app
 - finalized docker-compose.yml for build
 
+## 1/14
+
+### 5pm
+- Fixed issue with hot loadding not working
+- This happened because the code was copying over a static version of the source code in the app and no changes would be reflected in that
+- added notes and built the docker images to complete the Validate script process.
+
 
